@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html>
+  <head> 
+    <title>Evaluacion3</title>
+    <link rel="stylesheet" type="text/css" href="estiloseimagenes/estilosev3/estilosev3.css">
+  </head> 
+  <body>
+    <div id="contenedor">
+
+      <div id="cabecera">
+        <div id="logo">
+          <img src="./estiloseimagenes/imagenes/bibliotecalogo.png">
+        </div>
+        
+        <div id="separador">
+          <hr>
+        </div>
+
+        <div id="menu">
+            <div id="tabs">
+              <button class="seleccionado">Inicio</button>
+              <button onclick="window.location='./paginasmenu/apuntesvarios.html'">Apuntes Varios</button>
+              <button onclick="window.location='./paginasmenu/solicitar.html'">Solicitar Apunte</button>
+              <button onclick="window.location='./paginasmenu/crear.html'">Crear Apunte</button>
+            </div>
+
+            <div id="buscador">
+              <form action="javascript:buscar()" name="forms_buscar">
+                <label for="fbuscar">Buscar:</label>
+                <input type="text" id="" name="fbuscar"></input>
+                <input type="submit" name="boton_buscar" id="boton_buscar" value="Buscar"
+              style="color:black;"/>
+              </form>
+            </div>
+        </div>
+      </div>
+
+
+      <div id="contenido">
+        
+        <div id="principal"> 
+          
+          <div class="articulo">
+              <img id="imagen" onmouseover="imagen_aumento(this)" onmouseout="img_normal(this)" onclick="img_click(this)" title="Imagen" src="estiloseimagenes/imagenes/minions.jpg"/>
+              
+              <div id="cuadrado" title="Externals urls">
+                <ul>
+                  <li> 
+                    <a href="https://matias.ma/nsfw/">Especial Cuarentena</a>
+                  </li>
+                  <li> 
+                    <a href="http://elibro.com/colecciones">eLibros</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+
+          
+
+          <div id="tabla">
+          	 <table id="id_table" title="Tabla" onmouseover="tabla_aumento(this)" onmouseout="tabla_normal(this)" onclick="tabla_click(this)" >
+          	  <thead>
+                <tr id="fila-1">
+            	  	<th colspan="3">Creador de apuntes</th>
+            	  </tr>
+                <tr id="fila-2">
+                  <th>Apellido Paterno</th>
+                  <th>Apellido Materno</th> 
+                  <th>Nombre</th>
+                </tr>
+              </thead>
+              <tbody id="id_tbody">
+                <tr id="fila-3">
+                  <td>Gallardo</td>
+                  <td>Yañez</td>
+                  <td>Marshall</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+        <div id="features">
+            <ul>
+              <li>Apunte 1: Taller de Multimedios</li>
+              <li>Asunto : Subir prototipo de GitHub <br> </li>
+              <div>Contenido: tips de como subir archivos a github mediante tutoriales porque no lo capte muy bien en clases dado que lo pasaron muy rapido y no entiendo lo que dice github</div>
+              <div>para tomar tips y entender como subir este contenido</div>
+              <li>Apunte 2: Ing Software</li>
+              <div>Asunto: obtencion requerimientos</div>
+              <li>Contenido: entrevista obtencion requerimientos</li>
+              <div>mediante preguntas cerradas</div>
+              <div>y preguntas abiertas al individuo</div>
+            </ul>
+          </div>
+        </div>
+
+      <div id="pie">
+        <hr>
+      </div>  
+      
+    </div>
+  
+    <script type="text/javascript" src="./javascript/jsev3.js"></script>
+  </body> 
+</html>
