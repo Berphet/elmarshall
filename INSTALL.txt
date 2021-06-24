@@ -1,0 +1,23 @@
+mover la carpeta acumulativa2 a la ubicacion: 
+
+C:\wamp64\www    (disco local C, carpeta wamp 64, dentro de esa carpeta se encuentra la carpeta www)
+
+ingresar a la carpeta acumulativa2, abrir DBConfig y editar:
+
+cambiar localhost:3307 a 3306 en caso de importar la base de datos al servicio mysql
+dejar localhost:3307 en caso de importar la base de datos al servicio MariaDB
+
+cambiar nombre de usuario al suyo 
+cambiar contraseña a la respectiva de su usuario
+mantener el nombre de la base ded datos pues es la que importará
+
+ahora importar la base de datos:
+ingresar a phpmyadmin con su usuario y contraseña, ir a la opcion import/importar y seleccionar el archivo mysql 127_0_0_1
+
+listo, la base de datos a usar ya fue importada, el archivo que conecta a la base de datos fue configurado y queda probar la plataforma
+
+ingrese a su navegador y escriba: " localhost/acumulativa2/index.php " para proceder a ver el contenido
+
+y ya podra visualizar, insertar, actualizar y eliminar contenido
+
+
