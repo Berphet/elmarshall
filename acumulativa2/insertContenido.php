@@ -14,7 +14,7 @@ if(isset($_POST['escribir'])){
         $result = mysqli_query($conn,$sql_query);
 
         if($result > 0){
-            header('Location: showContenido.php');
+            header('Location: index.php');
         }else{
             echo "algo salio mal";
         }
@@ -49,7 +49,7 @@ if(isset($_POST['escribir'])){
                         </div>
                     </div>
                 </form>
-                <button style="margin-top: 1%" onclick="window.location='showContenido.php'">Volver</button>
+                <button style="margin-top: 1%" onclick="window.location='index.php'">Volver</button>
             </div>
             
         </div>
