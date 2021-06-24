@@ -21,7 +21,7 @@
         $result = mysqli_query($conn,$sql_query);
 
         if($result > 0){
-            header('Location: showContenido.php');
+            header('Location: index.php');
         }else{
             echo "Error, intente nuevamente";
         }
@@ -52,7 +52,7 @@
                             
                 <button class="btn btn-success" name="update">Actulizar Contenido</button>
                 </form>
-                <button style="margin-top: 1%" onclick="window.location='showContenido.php'">Volver</button>
+                <button style="margin-top: 1%" onclick="window.location='index.php'">Volver</button>
             </div>
             
         </div>
